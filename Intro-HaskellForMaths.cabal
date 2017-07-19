@@ -1,0 +1,53 @@
+-- This file has been generated from package.yaml by hpack version 0.17.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:                Intro-HaskellForMaths
+version:             0.1.0.0
+synopsis:            Introducción a HaskellForMaths
+description:         Un manual de uso de las funciones de la librería HaskellForMaths
+                     usadas en el proyecto [SAT-Pol](https://github.com/DanielRodCha/SAT-Pol).
+homepage:            https://github.com/jaalonso/Intro-HaskellForMaths#readme
+bug-reports:         https://github.com/jaalonso/Intro-HaskellForMaths/issues
+license:             GPL-3
+license-file:        LICENSE
+author:              José A. Alonso
+maintainer:          JoseA.Alonso@gmail.com
+copyright:           José A. Alonso (2017)
+category:            Math
+build-type:          Simple
+cabal-version:       >= 1.10
+
+extra-source-files:
+    README.org
+
+source-repository head
+  type: git
+  location: https://github.com/jaalonso/Intro-HaskellForMaths
+
+library
+  hs-source-dirs:
+      src
+  exposed-modules:
+      Cuerpos
+      Polinomios
+  other-modules:
+      Paths_Intro_HaskellForMaths
+  build-depends:
+      base >=4.7 && <5
+    , HaskellForMaths
+    , doctest
+  default-language: Haskell2010
+
+test-suite doctests
+  type: exitcode-stdio-1.0
+  main-is: Doctest.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded
+  build-depends:
+      base >=4.7 && <5
+    , HaskellForMaths
+    , doctest
+    , doctest-discover
+  default-language: Haskell2010

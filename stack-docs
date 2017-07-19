@@ -1,0 +1,6 @@
+#!/bin/bash -e
+stack haddock --no-haddock-deps --fast
+# stack sdist
+pname=`cat package.yaml | grep "name:" | awk '{ print $2 }'`
+doc_root=`stack path --local-doc-root`/$pname*
+cp -ruv $doc_root/* docs/

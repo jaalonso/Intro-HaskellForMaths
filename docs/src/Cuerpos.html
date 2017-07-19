@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">Cuerpos</span><span> </span><span class="hs-keyword">where</span><span>
+</span><a name="line-2"></a><span>
+</span><a name="line-3"></a><span class="hs-keyword">import</span><span> </span><span class="hs-identifier">Math</span><span class="hs-operator">.</span><span class="hs-identifier">Core</span><span class="hs-operator">.</span><span class="hs-identifier">Field</span><span> </span><span>
+</span><a name="line-4"></a><span>
+</span><a name="line-5"></a><span class="hs-comment">-- | En el m&#243;dulo se deine el cuerpo Q de los racionales y los cuerpos</span><span>
+</span><a name="line-6"></a><span class="hs-comment">-- de Galois F2, F3, F4, F5, F7, F8, F9, F11, F13, F16, F17, F19, F23 y F25.</span><span>
+</span><a name="line-7"></a><span>
+</span><a name="line-8"></a><span class="hs-comment">-- * Elementos de los cuerpos finitos</span><span>
+</span><a name="line-9"></a><span>
+</span><a name="line-10"></a><span class="hs-comment">-- $elementos</span><span>
+</span><a name="line-11"></a><span class="hs-comment">--</span><span>
+</span><a name="line-12"></a><span class="hs-comment">-- __fp__ es la lista de los elementos del cuerpo Fp. Por ejemplo,</span><span>
+</span><a name="line-13"></a><span class="hs-comment">--</span><span>
+</span><a name="line-14"></a><span class="hs-comment">-- &gt;&gt;&gt; let xs = f3</span><span>
+</span><a name="line-15"></a><span class="hs-comment">-- &gt;&gt;&gt; xs</span><span>
+</span><a name="line-16"></a><span class="hs-comment">-- [0,1,2]</span><span>
+</span><a name="line-17"></a><span class="hs-comment">-- &gt;&gt;&gt; :type xs</span><span>
+</span><a name="line-18"></a><span class="hs-comment">-- xs :: [F3]</span><span>
+</span><a name="line-19"></a><span class="hs-comment">-- &gt;&gt;&gt; let xs = f5</span><span>
+</span><a name="line-20"></a><span class="hs-comment">-- &gt;&gt;&gt; xs</span><span>
+</span><a name="line-21"></a><span class="hs-comment">-- [0,1,2,3,4]</span><span>
+</span><a name="line-22"></a><span class="hs-comment">-- &gt;&gt;&gt; :type xs</span><span>
+</span><a name="line-23"></a><span class="hs-comment">-- xs :: [F5]</span><span>
+</span><a name="line-24"></a><span>
+</span><a name="line-25"></a><span class="hs-comment">-- * Operaciones en cuerpos finitos</span><span>
+</span><a name="line-26"></a><span>
+</span><a name="line-27"></a><span class="hs-comment">-- $operaciones</span><span>
+</span><a name="line-28"></a><span class="hs-comment">--</span><span>
+</span><a name="line-29"></a><span class="hs-comment">-- &gt;&gt;&gt; 2*3 :: F5</span><span>
+</span><a name="line-30"></a><span class="hs-comment">-- 1</span><span>
+</span><a name="line-31"></a><span class="hs-comment">-- &gt;&gt;&gt; 2*3 :: F4</span><span>
+</span><a name="line-32"></a><span class="hs-comment">-- 0</span><span>
+</span><a name="line-33"></a><span class="hs-comment">-- &gt;&gt;&gt; 2+3 :: F5</span><span>
+</span><a name="line-34"></a><span class="hs-comment">-- 0</span><span>
+</span><a name="line-35"></a><span class="hs-comment">-- &gt;&gt;&gt; 2*3 :: F5</span><span>
+</span><a name="line-36"></a><span class="hs-comment">-- 1</span><span>
+</span><a name="line-37"></a><span class="hs-comment">-- &gt;&gt;&gt; 3^2 :: F5</span><span>
+</span><a name="line-38"></a><span class="hs-comment">-- 4</span><span>
+</span><a name="line-39"></a><span>
+</span><a name="line-40"></a><span class="hs-comment">-- * Operaciones racionales</span><span>
+</span><a name="line-41"></a><span>
+</span><a name="line-42"></a><span class="hs-comment">-- $racionales</span><span>
+</span><a name="line-43"></a><span class="hs-comment">--</span><span>
+</span><a name="line-44"></a><span class="hs-comment">-- &gt;&gt;&gt; 2/6 + (3/6)^2 :: Q</span><span>
+</span><a name="line-45"></a><span class="hs-comment">-- 7/12</span><span>
+</span><a name="line-46"></a></pre></body></html>

@@ -1,0 +1,30 @@
+name: Intro-HaskellForMaths
+synopsis: Introducción a HaskellForMaths
+description:  |
+  Un manual de uso de las funciones de la librería HaskellForMaths
+  usadas en el proyecto [SAT-Pol](https://github.com/DanielRodCha/SAT-Pol).
+version: '0.1.0.0'
+category: Math
+author: José A. Alonso
+maintainer: JoseA.Alonso@gmail.com
+copyright: José A. Alonso (2017)
+license: GPL-3
+github: jaalonso/Intro-HaskellForMaths
+extra-source-files:
+- README.org 
+dependencies:
+- base >=4.7 && <5
+- HaskellForMaths
+- doctest
+library:
+  source-dirs: src
+  exposed-modules:
+  - Cuerpos
+  - Polinomios
+tests:
+  doctests:
+    main: Doctest.hs
+    source-dirs: test
+    ghc-options: -threaded
+    dependencies:
+    - doctest-discover
