@@ -3,7 +3,6 @@ module Polinomios where
 import Math.Core.Field ( F3, Q )
 import Math.CommutativeAlgebra.Polynomial
 
-
 -- * Orden de los monomios
 
 -- ** Orden lexicográfico
@@ -66,6 +65,28 @@ import Math.CommutativeAlgebra.Polynomial
 -- >>> let [x,y,z] = map var ["x","y","z"] :: [GlexPoly Q String]
 -- >>> (x+y+z)^3
 -- x^3+3x^2y+3x^2z+3xy^2+6xyz+3xz^2+y^3+3y^2z+3yz^2+z^3
+
+-- * Descomposición de polinomios
+
+-- $lm
+--
+-- __(lm p)__ es el monomio líder del polinomio p. Por ejemplo,
+--
+-- >>> let [x,y,z] = map glexvar ["x","y","z"]
+-- >>> lm (x+2*x^2*y+5*y^4*x*z^2+7*x*y*z)
+-- xy^4z^2
+
+-- $mindices
+--
+-- __(mindices m)__ es la lista de los pares formados por las variables
+-- del monomio m y sus exponentes. Por ejemplo,
+--
+-- >>> let [x,y,z] = map glexvar ["x","y","z"]
+-- >>> let m = lm (x+2*x^2*y+5*y^4*x*z^2+7*x*y*z)
+-- >>> m
+-- xy^4z^2
+-- >>> mindices m
+-- [("x",1),("y",4),("z",2)]
 
 -- * Valor de un polinomio
 

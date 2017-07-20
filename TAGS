@@ -2,6 +2,9 @@
 ./src/Cuerpos.hs,28
 module Cuerpos Cuerpos0,1
 
+./src/flycheck_Polinomios.hs,34
+module Polinomios Polinomios0,1
+
 ./src/Polinomios.hs,34
 module Polinomios Polinomios0,1
 
