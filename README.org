@@ -1,4 +1,4 @@
 #+TITLE: Introducción a HaskellForMaths
-
+ 
 Un manual de uso de las funciones de la librería [[https://hackage.haskell.org/package/HaskellForMaths-0.4.8][HaskellForMaths]] usadas en el
 proyecto [[https://github.com/DanielRodCha/SAT-Pol][SAT-Pol]].
